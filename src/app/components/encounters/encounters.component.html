@@ -1,0 +1,50 @@
+<div class="wrapper-long">ENCOUNTERS</div>
+
+
+  <img src="http://dxlfb468n8ekd.cloudfront.net/gsc/5TZG2L/bc/92/f4/bc92f4ec3c4b421694823ffe22976cb4/images/patient_summary/u11936.png?token=fc5b2998e9007b77f0989991efb17e74" tabindex="0">
+  <label  class="generic-label" for="lov">
+    Last outpatient visit *
+    <input (click)="showReason=true;" class="medium-input" id="lov" placeholder="DD-MMM-YY">
+
+  </label>
+
+<div class="wrapper-left">
+  <div *ngIf="showReason">
+
+  <label  class="generic-label" for="rfv" style="display: block">
+    Reason for visit
+    <div style="display: block">
+    <input name="rfv" type="radio" value="Regular follow up"> <span>Regular follow up</span>
+    <input name="rfv" type="radio" value="Other"> <span>Other</span>
+    </div>
+  </label>
+  <label class="generic-label" for="lh">
+    Last hospitalization
+    <input class="medium-input" id="lh" placeholder="DD-MMM-YY">
+  </label>
+  <label class="generic-label" for="comment">
+      Comment
+    <input class="large-input" id="comment">
+  </label>
+  </div>
+  </div>
+  <hr />
+  <img id="u22060_img" class="img " src="http://d2t44wh9rnwl5y.cloudfront.net/gsc/5TZG2L/bc/92/f4/bc92f4ec3c4b421694823ffe22976cb4/images/add_baseline_-_hu_elektivna/u249.png?token=c4637907904113ccb1f9e8e8687c2d12">
+  <label  class="generic-label" for="ld">
+    Last hospitalization<input (click)="showMedication=true" class="medium-input" id="ld" placeholder="DD-MMM-YY">
+  </label>
+  <div class="wrapper-left">
+  <div *ngIf="showMedication">
+  <label  class="generic-label" for="reason" style="display: block">
+    Reason for visit
+    <div style="display: block">
+      <input name="reason" type="radio" value="Heart related"> <span>Heart related</span>
+      <input name="reason" type="radio" value="Other"> <span>Other</span>
+    </div>
+  </label>
+  <label class="generic-label" for="comment-discharge">
+    Comment - discharge
+    <input class="large-input" id="comment-discharge">
+  </label>
+    </div>
+  </div>

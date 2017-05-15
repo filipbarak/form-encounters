@@ -1,0 +1,24 @@
+@import "../../../styles";
+
+::-webkit-input-placeholder {
+  font-size: $placeholder-fontsize;
+  color: $placeholder-gray;
+  font-weight: $placeholder-fontweight;
+}
+::-moz-placeholder {
+  font-size: $placeholder-fontsize;
+  color: $placeholder-gray;
+  font-weight: $placeholder-fontweight;
+}
+:-ms-input-placeholder {
+  font-size: $placeholder-fontsize;
+  color: $placeholder-gray;
+  font-weight: $placeholder-fontweight;
+
+};
+
+select, option {
+  font-size: 14px !important;
+  color: #61646D;
+  font-weight: 400 !important;
+}

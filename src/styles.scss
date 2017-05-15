@@ -24,6 +24,7 @@ $input-fontweight: 700;
 $input-fontsize: 16px;
 $heading-big-header-fontsize: 20px;
 $heading-small-fontsize: 14px;
+$placeholder-fontweight: 400;
 
 
 //FORM DOM SIZES
@@ -44,22 +45,6 @@ $paper: url(http://d26uhratvi024l.cloudfront.net/gsc/5TZG2L/c2/dc/f7/c2dcf7e2ec1
 
 //MIXINS
 @mixin generic-input($width, $height) {
-  ::-webkit-input-placeholder {
-    font-size: $placeholder-fontsize;
-    font-style: italic;
-    color: $placeholder-gray;
-  }
-  ::-moz-placeholder {
-    font-size: $placeholder-fontsize;
-    font-style: italic;
-    color: $placeholder-gray;
-  }
-  :-ms-input-placeholder {
-    font-size: $placeholder-fontsize;
-    font-style: italic;
-    color: $placeholder-gray;
-
-  };
   font-weight: $input-fontweight;
   font-size: $input-fontsize;
   width: $width;
@@ -86,6 +71,7 @@ color: $main-gray;
 
 .generic-label {
   font-size: $label-fontsize;
+  color: $top-header-darkgrey;
 }
 
 .small-input {
@@ -102,15 +88,13 @@ color: $main-gray;
 }
 
 .large-heading {
-  color: $header-lightgray;
+  color: $top-header-darkgrey;
   font-size: $heading-big-header-fontsize;
-  font-style: italic;
   font-weight: 500;
 }
 .small-heading {
-  color: $header-lightgray;
+  color: $top-header-darkgrey;
   font-size: $heading-small-fontsize;
-  font-style: italic;
   font-weight: 500;
 
 }
@@ -146,5 +130,23 @@ input, label, select {
   background-color: $confirm-button-green;
   color: white;
 }
+.wrapper-long{
+  height: 32px;
+  width: auto;
+  color: $top-header-darkgrey;
+  background-color: #F8F8F8;
+  text-align: left !important;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  padding: 5px 0 9px 10px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin-bottom : 10px;
 
+}
+.wrapper-left {
+  margin-left: 68px;
+
+}
 

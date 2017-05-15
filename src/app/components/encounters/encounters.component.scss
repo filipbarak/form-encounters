@@ -1,0 +1,30 @@
+@import "../../../styles";
+::-webkit-input-placeholder {
+  font-size: $placeholder-fontsize;
+  color: $placeholder-gray;
+  font-weight: $placeholder-fontweight;
+}
+::-moz-placeholder {
+  font-size: $placeholder-fontsize;
+  color: $placeholder-gray;
+  font-weight: $placeholder-fontweight;
+}
+:-ms-input-placeholder {
+  font-size: $placeholder-fontsize;
+  color: $placeholder-gray;
+  font-weight: $placeholder-fontweight;
+
+};
+input[type="radio"] {
+  display: inline-flex;
+  font-size: 16px;
+}
+span{
+  font-size: 16px;
+  margin-right: 20px
+}
+img {
+  display: inline-flex;
+  float: left;
+  margin: 10px;
+}

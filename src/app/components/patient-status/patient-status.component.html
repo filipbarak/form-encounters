@@ -1,0 +1,16 @@
+<div class="wrapper-long">PATIENT STATUS</div>
+<div class="wrapper-left">
+    <label class="generic-label" for="lov">
+        Patient status
+        <select class="large-input" id="lov" placeholder="DD-MMM-YY" (change)="expand($event)">
+            <option *ngFor="let item of options; let i = index;" value="{{item}}">{{item}}</option>
+        </select>
+    </label>
+    <label *ngIf="shown" class="generic-label" for="ld">
+        <div class="d-inline">
+            Listing date *<input class="medium-input" id="ld" placeholder="DD-MMM-YY">
+
+        </div>
+
+    </label>
+</div>
